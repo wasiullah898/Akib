@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Tutorial</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-theme">Toggle Dark Mode</button>
+        <input type="text" id="search-bar" placeholder="Search tutorials..." oninput="filterTutorials()">
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Your journey to learning starts here!</p>
+        </section>
+
+        <section id="tutorials">
+            <h2>Tutorials</h2>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-intro')">
+                <h3>HTML Introduction</h3>
+                <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-elements')">
+                <h3>HTML Elements</h3>
+                <p>An HTML element is a building block of an HTML page, consisting of a start tag, content, and an end tag.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-attributes')">
+                <h3>HTML Attributes</h3>
+                <p>Attributes provide additional information about HTML elements, such as <code>id</code>, <code>class</code>, and <code>style</code>.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-headings')">
+                <h3>HTML Headings</h3>
+                <p>HTML has six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, used to structure content.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-links')">
+                <h3>HTML Links</h3>
+                <p>Use the <code>&lt;a&gt;</code> tag to create hyperlinks to other web pages, using the <code>href</code> attribute to specify the URL.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-lists')">
+                <h3>HTML Lists</h3>
+                <p>HTML supports ordered lists (<code>&lt;ol&gt;</code>), unordered lists (<code>&lt;ul&gt;</code>), and definition lists (<code>&lt;dl&gt;</code>).</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-images')">
+                <h3>HTML Images</h3>
+                <p>The <code>&lt;img&gt;</code> tag is used to embed images in a webpage, using the <code>src</code> attribute to specify the image source.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-forms')">
+                <h3>HTML Forms</h3>
+                <p>HTML forms (<code>&lt;form&gt;</code>) collect user input, using elements like <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code>.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-semantic')">
+                <h3>HTML Semantic Elements</h3>
+                <p>Semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> provide meaning to the content structure.</p>
+            </div>
+            <div class="tutorial" data-keywords="html" onclick="showTutorial('html-tables')">
+                <h3>HTML Tables</h3>
+                <p>The <code>&lt;table&gt;</code> element is used to display data in rows and columns, with <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;th&gt;</code> for rows, data, and headers.</p>
+            </div>
+
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-intro')">
+                <h3>CSS Introduction</h3>
+                <p>CSS stands for Cascading Style Sheets and is used to style HTML documents, controlling layout, colors, fonts, and more.</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-selectors')">
+                <h3>CSS Selectors</h3>
+                <p>CSS selectors are patterns used to select elements to apply styles, including class (<code>.class</code>), ID (<code>#id</code>), and element (<code>element</code>).</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-box-model')">
+                <h3>CSS Box Model</h3>
+                <p>The CSS box model describes how elements are structured, including margins, borders, padding, and the actual content area.</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-flexbox')">
+                <h3>CSS Flexbox</h3>
+                <p>Flexbox is a layout model that provides a way to design complex layouts using a one-dimensional space, allowing easy alignment and distribution of space.</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-grid')">
+                <h3>CSS Grid</h3>
+                <p>CSS Grid is a two-dimensional layout system that enables designers to create complex web layouts with rows and columns.</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-media-queries')">
+                <h3>CSS Media Queries</h3>
+                <p>Media queries allow CSS to apply styles based on the device’s characteristics, such as screen width, enabling responsive design.</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-transitions')">
+                <h3>CSS Transitions</h3>
+                <p>CSS transitions allow property changes in CSS values to occur smoothly over a specified duration, enhancing user interaction.</p>
+            </div>
+            <div class="tutorial" data-keywords="css" onclick="showTutorial('css-animations')">
+                <h3>CSS Animations</h3>
+                <p>CSS animations enable the creation of animations through keyframes, providing a way to animate changes in CSS properties over time.</p>
+            </div>
+
+            <div class="tutorial" data-keywords="javascript" onclick="showTutorial('js-intro')">
+                <h3>JavaScript Introduction</h3>
+                <p>JavaScript is a programming language that enables interactive web pages, allowing developers to implement complex features on websites.</p>
+            </div>
+            <div class="tutorial" data-keywords="javascript" onclick="showTutorial('js-variables')">
+                <h3>JavaScript Variables</h3>
+                <p>Variables in JavaScript store data values. You can declare variables using <code>var</code>, <code>let</code>, or <code>const</code>.</p>
+            </div>
+        </section>
+
+        <section id="tutorial-content">
+            <h2>Tutorial Content</h2>
+            <div id="content"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tutorial Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

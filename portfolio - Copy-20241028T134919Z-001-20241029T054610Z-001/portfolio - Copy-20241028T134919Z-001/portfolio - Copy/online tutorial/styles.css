@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+
+    text-decoration: none;
+}
+nav ul li a:hover
+{
+    color: rgb(255, 255, 255);
+    transition-duration: 0.6s;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.tutorial {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tutorial:hover {
+    background: #ddd;
+}
+
+#content {
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.tutorial.dark {
+    background: #1e1e1e;
+    color: #e0e0e0;
+}
+
+#toggle-theme {
+    margin: 10px;
+    height: 50px;
+    border-radius: 10px;
+    width: 10%;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+#toggle-theme:hover
+{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+#search-bar
+{
+    margin: 5px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}

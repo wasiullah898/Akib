@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #050505;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #ffffff;
+    margin: 0 1rem;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px
+    ;
+    text-decoration: none;
+  }
+  nav a:hover
+  {
+    color: rgb(0, 255, 13);
+    transform-origin: 10%;
+  }
+  .main {
+    padding: 2rem;
+  }
+  
+  /* Login styling */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Question styling */
+  .question-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+/* Timer and progress bar styling */
+.timer, .progress {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #fff;
+  }
+h2{
+    text-align:center;
+    font-size: 25px;
+    color:black;
+}    
+h2, p,ul,li 
+{
+    text-align: center;
+margin-top: 30px;
+font-size: 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

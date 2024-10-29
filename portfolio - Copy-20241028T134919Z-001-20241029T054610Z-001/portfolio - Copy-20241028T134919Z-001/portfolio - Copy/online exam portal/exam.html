@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>Online Exam</h2>
+    <div class="timer">
+      <span>Time Left: <span id="timer">10:00</span></span>
+    </div>
+    <div class="progress">
+      <span id="progress">Question 1 of 2</span>
+    </div>
+  </header>
+  <main>
+    <div class="question-container">
+      <div id="question-text"></div>
+      <div id="options"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="score-container" style="display: none;">
+      <h2>Exam Completed</h2>
+      <p>Your score: <span id="score"></span> out of 2</p>
+      <button onclick="window.location.reload()">Restart</button>
+    </div>
+  </main>
+</body>
+</html>
